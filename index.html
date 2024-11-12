@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Neon Navigation Bar with Dropdown -->
+    <nav>
+        <ul>
+           
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#threats" class="dropbtn"><i class="fas fa-exclamation-triangle"></i> Cyber Threats</a>
+                <div class="dropdown-content">
+                    <a href="phishing.html">Phishing</a>
+                    <a href="malware.html">Malware</a>
+                    <a href="ransomware.html">Ransomware</a>
+                    <a href="spyware.html">Spyware</a>
+                    <a href="trojans.html">Trojans</a>
+                    <a href="ddos.html">DDoS Attacks</a>
+                </div>
+            </li>
+            <li><a href="#tips"><i class="fas fa-shield-alt"></i> Safety Tips</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="login.html"> Login/SignUp</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Cyber Security Hub</h1>
+        <p>Your gateway to online protection and cyber awareness.</p>
+        <div id="const"><input type="text" placeholder="Search " id="search"><div class="button"><button onclick="checksearch()" class="hello">Search</button></div></div>
+        <hr style="color: aliceblue;">
+        <p>If you Wanna learn deep about Threats explore Our webpage </p>
+        <p>After Knowing Threats You can Answer an Easy <a href="quiz.html">Quiz</a></p>
+    </section>
+
+    <!-- Cyber Threats Section with Placeholder Images -->
+    <section id="threats" class="threats">
+      <h2>Cyber Threats</h2>
+      <div class="threat-card">
+          <img src="pish.jpg" alt="Cyber Threat 1">
+          <p>Phishing is when cybercriminals try to trick you into revealing sensitive information like passwords, credit card numbers, or personal details, often by pretending to be a trusted entity.                      </p>
+      </div>
+      <div class="threat-card">
+          <img src="malware.jpg" alt="Cyber Threat 2">
+          <p>Malware (short for malicious software) refers to any software designed to harm, exploit, or otherwise compromise the functionality of a computer, device, or network. It is often used by cybercriminals to steal personal data, damage systems, or take control of your device.</p>
+      </div>
+      <div class="threat-card">
+          <img src="brute.jpg" alt="Cyber Threat 3">
+          <p>
+            A brute force attack is a method used by cybercriminals to guess a password by systematically trying all possible combinations of characters until the correct one is found.</p>
+      </div>
+  </section>
+    <!-- Cyber Safety Tips Section -->
+    <section id="tips" class="tips">
+        <h2>Cyber Safety Tips</h2>
+        <ul>
+            <li>Use strong, unique passwords for each account.</li>
+            <li>Enable two-factor authentication wherever possible.</li>
+            <li>Stay aware of phishing scams and suspicious links.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:
+            <input type="text" id="name" name="name" required></label><br>
+            <label for="email">Email:
+            <input type="email" id="email" name="email" required></label><br>
+            <label for="message">Message :</label>
+            <input type="message" required><br>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Cyber Security Hub. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
